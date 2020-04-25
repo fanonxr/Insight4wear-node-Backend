@@ -1,0 +1,25 @@
+{
+  "name": "insight4wear-backend",
+  "version": "1.0.0",
+  "description": "Server side code for insight4wear's backend built with node. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon watch server.js"
+  },
+  "keywords": [
+    "node",
+    "android",
+    "fitness"
+  ],
+  "author": "Fanon X Rogers",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
