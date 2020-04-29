@@ -9,7 +9,7 @@ var corOptions = {
     origin: "http:localhost:8081"
 }
 
-app.use(cors(corsOptions));
+app.use(cors(corOptions));
 
 // handle parsing the request as json
 app.use(bodyParser.json());
@@ -21,7 +21,8 @@ app.get('/', (req, res) => {
     res.json({ message: 'Welcome to Insight4Wear' }); // Possibly update this with the current Webpage
 });
 
-// TODO: Setup routes
+// setup the routes
+require('./src/routes/routes.js')(app);
 
 const PORT = process.env.PORT || 8081;
 
